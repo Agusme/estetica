@@ -11,8 +11,8 @@ export default function Hero() {
       </p>
 
       <div className="flex gap-4">
-        <button className="btn-spa">Reservar turno</button>
-        <button className="btn-spa-outline">Ver servicios</button>
+        <a className="btn-spa" href="#turnos">Reservar turno</a>
+        <a className="btn-spa-outline" href="#services">Ver servicios</a>
       </div>
     </section>
   );

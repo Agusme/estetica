@@ -2,7 +2,7 @@ import ServiceCard from "./ServiceCard";
 
 export default function Services() {
   return (
-    <section className="py-16 px-6 text-center">
+    <section className="py-16 px-6 text-center" id="services">
       <h2 className="text-3xl font-semibold mb-10">Nuestros servicios</h2>
 
       <div className="grid md:grid-cols-3 gap-6">
