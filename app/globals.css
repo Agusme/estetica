@@ -10,8 +10,22 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-spa-50: #f5f8f1;
+  --color-spa-100: #e9f0df;
+  --color-spa-300: #b7cb9a;
+  --color-spa-500: #6f8f45;
+  --color-spa-700: #2d4517; /* tu color base */
+  --color-spa-800: #233612;
 }
-
+@layer components {
+  .btn-spa {
+    @apply bg-spa-700 hover:bg-spa-800 text-white px-6 py-3 rounded-full transition;
+  };
+ .btn-spa-outline {
+    @apply border border-[#2D4517] text-[#2D4517]
+ px-6 py-3 rounded-full hover:bg-[#6ba138d8] hover:text-white transition;
+  };
+} 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
