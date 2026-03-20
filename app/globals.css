@@ -20,12 +20,11 @@
 @layer components {
   .btn-spa {
     @apply bg-spa-700 hover:bg-spa-800 text-white px-6 py-3 rounded-full transition;
-  };
- .btn-spa-outline {
-    @apply border border-[#2D4517] text-[#2D4517]
- px-6 py-3 rounded-full hover:bg-[#6ba138d8] hover:text-white transition;
-  };
-} 
+  }
+  .btn-spa-outline {
+    @apply border border-spa-700 text-spa-700 px-6 py-3 rounded-full hover:bg-spa-500 hover:text-white transition;
+  }
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
