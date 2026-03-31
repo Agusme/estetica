@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="bg-white shadow sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#" className="font-playfair text-2xl font-bold text-spa-700">
-Estetica Natural</a>
+Estética Natural</a>
 
         {/* Desktop links */}
         <div className="hidden md:flex space-x-6">
@@ -23,7 +23,7 @@ Estetica Natural</a>
             <a
               key={link.href}
               href={link.href}
-              className="text-gray-600 hover:text-spa-700 transition"
+              className="text-gray-600 font-semibold hover:text-spa-700 transition"
             >
               {link.label}
             </a>
@@ -38,13 +38,13 @@ Estetica Natural</a>
           aria-expanded={open}
         >
           <span
-            className={`block h-0.5 w-6 bg-spa-700 transition-transform ${open ? "rotate-45 translate-y-2" : ""}`}
+            className={`block h-0.5 w-6 font-semibold bg-spa-700 transition-transform ${open ? "rotate-45 translate-y-2" : ""}`}
           />
           <span
-            className={`block h-0.5 w-6 bg-spa-700 transition-opacity ${open ? "opacity-0" : ""}`}
+            className={`block h-0.5 w-6 font-semibold bg-spa-700 transition-opacity ${open ? "opacity-0" : ""}`}
           />
           <span
-            className={`block h-0.5 w-6 bg-spa-700 transition-transform ${open ? "-rotate-45 -translate-y-2" : ""}`}
+            className={`block h-0.5 w-6 font-semibold bg-spa-700 transition-transform ${open ? "-rotate-45 -translate-y-2" : ""}`}
           />
         </button>
       </div>
