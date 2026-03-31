@@ -16,7 +16,7 @@ export default function ServiceCard({
   priority = false,
 }: ServiceCardProps) {
   return (
-    <div className="shadow rounded-xl overflow-hidden transition duration-300 md:hover:scale-105 md:hover:shadow-lg">
+    <div className="bg-spa-300 border   border-t-4 border-spa-300 shadow rounded-xl overflow-hidden transition duration-300 md:hover:scale-105 md:hover:shadow-lg">
       <Image
         src={src}
         alt={alt}
@@ -29,6 +29,10 @@ export default function ServiceCard({
         <h3 className="font-bold mb-2">{title}</h3>
         <p>{description}</p>
       </div>
+      <div>
+        
+      </div>
+   
     </div>
   );
 }
