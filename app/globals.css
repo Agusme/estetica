@@ -18,6 +18,8 @@
   --color-spa-500: #6f8f45;
   --color-spa-700: #2d4517; /* tu color base */
   --color-spa-800: #233612;
+    --font-playfair: var(--font-playfair);
+  --font-merriweather: var(--font-merriweather);
 }
 @layer components {
   .btn-spa {
