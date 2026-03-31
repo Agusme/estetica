@@ -14,9 +14,8 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold text-spa-700">
-          Estética Natural
-        </a>
+        <a href="#" className="font-playfair text-2xl font-bold text-spa-700">
+Estética Natural</a>
 
         {/* Desktop links */}
         <div className="hidden md:flex space-x-6">
@@ -24,7 +23,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-gray-600 hover:text-spa-700 transition"
+              className="text-gray-600 font-semibold hover:text-spa-700 transition"
             >
               {link.label}
             </a>
@@ -39,13 +38,13 @@ export default function Navbar() {
           aria-expanded={open}
         >
           <span
-            className={`block h-0.5 w-6 bg-spa-700 transition-transform ${open ? "rotate-45 translate-y-2" : ""}`}
+            className={`block h-0.5 w-6 font-semibold bg-spa-700 transition-transform ${open ? "rotate-45 translate-y-2" : ""}`}
           />
           <span
-            className={`block h-0.5 w-6 bg-spa-700 transition-opacity ${open ? "opacity-0" : ""}`}
+            className={`block h-0.5 w-6 font-semibold bg-spa-700 transition-opacity ${open ? "opacity-0" : ""}`}
           />
           <span
-            className={`block h-0.5 w-6 bg-spa-700 transition-transform ${open ? "-rotate-45 -translate-y-2" : ""}`}
+            className={`block h-0.5 w-6 font-semibold bg-spa-700 transition-transform ${open ? "-rotate-45 -translate-y-2" : ""}`}
           />
         </button>
       </div>
