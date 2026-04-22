@@ -39,7 +39,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="text-sm text-spa-300">
-          &copy; {new Date().getFullYear()} Estetica Natural. Todos los derechos reservados.
+          &copy; {new Date().getFullYear()} Estética Natural. Todos los derechos reservados.
         </p>
       </div>
     </footer>
