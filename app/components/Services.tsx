@@ -7,17 +7,19 @@ export default function Services() {
 
       <div className="grid md:grid-cols-3 gap-6">
         <ServiceCard
-          src="/cleaning.jpg"
+          src="/clean.jpg"
           alt="Limpieza facial"
           title="Limpieza facial"
           description="Mejorá la salud y apariencia de tu piel."
+          objectPosition="object-[center_30%]"
         />
         <ServiceCard
-          src="/depilation.jpg"
+          src="/depi.png"
           alt="Depilación"
           title="Depilación definitiva"
           description="Resultados duraderos y sin dolor."
           priority
+          objectPosition="object-[center_30%]"
         />
         <ServiceCard
           src="/esthetic.jpg"
