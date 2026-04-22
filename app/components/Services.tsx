@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 export default function Services() {
   return (
     <section className="py-16 px-6 text-center" id="services">
-      <h2 className="text-3xl font-playfair font-semibold mb-10">Nuestros servicios</h2>
+      <h2 className="text-3xl font-playfair font-semibold mb-10 text-spa-700">Nuestros servicios</h2>
 
       <div className="grid md:grid-cols-3 gap-6">
         <ServiceCard
@@ -19,7 +19,6 @@ export default function Services() {
           title="Depilación definitiva"
           description="Resultados duraderos y sin dolor."
           priority
-          objectPosition="object-[center_30%]"
         />
         <ServiceCard
           src="/esthetic.jpg"
@@ -27,6 +26,7 @@ export default function Services() {
           title="Tratamientos corporales"
           description="Modelá y cuidá tu cuerpo."
           priority
+          objectPosition="object-[center_60%]"
         />
       </div>
     

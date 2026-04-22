@@ -23,9 +23,9 @@ export default function ServiceCard({
         src={src}
         alt={alt}
         width={400}
-        height={300}
+        height={400}
         priority={priority}
-        className={`w-full h-48 object-cover ${objectPosition}`}
+        className={`w-full h-40 object-cover ${objectPosition}`}
       />
       <div className="p-4">
         <h3 className="font-bold mb-2">{title}</h3>
