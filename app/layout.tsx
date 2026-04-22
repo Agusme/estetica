@@ -25,13 +25,13 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "Estética Natural | Tratamientos estéticos personalizados",
+  title: "Estetica Natural | Tratamientos esteticos personalizados",
   description:
-    "Limpieza facial, depilación definitiva y tratamientos corporales. Reservá tu turno por WhatsApp.",
+    "Limpieza facial, depilacion definitiva y tratamientos corporales. Reserva tu turno por WhatsApp.",
   openGraph: {
-    title: "Estética Natural",
+    title: "Estetica Natural",
     description:
-      "Tratamientos estéticos personalizados para que te sientas radiante.",
+      "Tratamientos esteticos personalizados para que te sientas radiante.",
     type: "website",
   },
 };
@@ -44,7 +44,8 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${merriweather.variable} h-full antialiased scroll-smooth`}      style={{ colorScheme: "light" }}
+      className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${merriweather.variable} h-full antialiased scroll-smooth`}
+      style={{ colorScheme: "light" }}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
