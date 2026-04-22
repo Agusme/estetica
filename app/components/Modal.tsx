@@ -35,12 +35,12 @@ export default function Modal({ isOpen, title, onClose, children }: ModalProps) 
   return (
     <div
       className="modal modal-open modal-middle"
-      onClick={onClose}
       role="dialog"
       aria-modal="true"
       aria-label={title}
+      data-theme="light"
     >
-      <div className="modal-box max-w-2xl" onClick={(event) => event.stopPropagation()}>
+      <div className="modal-box relative w-11/12 max-w-2xl bg-white text-gray-700">
         <button
           type="button"
           onClick={onClose}
@@ -49,17 +49,14 @@ export default function Modal({ isOpen, title, onClose, children }: ModalProps) 
         >
           x
         </button>
-        <h3 className="font-playfair text-2xl text-spa-700 pr-10">{title}</h3>
+        <h3 className="pr-10 font-playfair text-2xl text-spa-700">{title}</h3>
         <div className="mt-4 text-gray-700">{children}</div>
-         <div className="mt-4 flex justify-end">
-             <a className="btn-spa" href="#turnos" onClick={onClose}>
-              Reservar turno
-            </a>
-         </div>
       </div>
-      <div className="modal-backdrop">
-        <button type="button" onClick={onClose} aria-label="Cerrar" />
-      </div>
+      <form method="dialog" className="modal-backdrop">
+        <button type="button" onClick={onClose} aria-label="Cerrar modal">
+          close
+        </button>
+      </form>
     </div>
   );
 }
