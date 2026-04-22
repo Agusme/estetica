@@ -15,7 +15,8 @@ export default function Navbar() {
     <nav className="bg-white shadow sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#" className="font-playfair text-2xl font-bold text-spa-700">
-Estética Natural</a>
+          Estética Natural
+        </a>
 
         {/* Desktop links */}
         <div className="hidden md:flex space-x-6">
@@ -23,7 +24,7 @@ Estética Natural</a>
             <a
               key={link.href}
               href={link.href}
-              className="text-gray-600 font-semibold hover:text-spa-700 transition"
+              className="text-spa-700 font-semibold hover:text-gray-600 transition"
             >
               {link.label}
             </a>
