@@ -15,10 +15,9 @@ export default function Navbar() {
     <nav className="bg-white shadow sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#" className="font-playfair text-2xl font-bold text-spa-700">
-          Estética Natural
+          Estetica Natural
         </a>
 
-        {/* Desktop links */}
         <div className="hidden md:flex space-x-6">
           {links.map((link) => (
             <a
@@ -31,11 +30,10 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Hamburger button */}
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden flex flex-col gap-1.5 p-2"
-          aria-label="Menú"
+          aria-label="Menu"
           aria-expanded={open}
         >
           <span
@@ -50,7 +48,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {open && (
         <div className="md:hidden border-t px-4 pb-4 space-y-2">
           {links.map((link) => (
