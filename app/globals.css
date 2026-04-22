@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "daisyui";
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -16,19 +16,26 @@
   --color-spa-100: #e9f0df;
   --color-spa-300: #b7cb9a;
   --color-spa-500: #6f8f45;
-  --color-spa-700: #2d4517; /* tu color base */
+  --color-spa-700: #2d4517;
   --color-spa-800: #233612;
-    --font-playfair: var(--font-playfair);
+  --font-playfair: var(--font-playfair);
   --font-merriweather: var(--font-merriweather);
 }
+
 @layer components {
   .btn-spa {
     @apply bg-spa-700 hover:bg-spa-800 text-white px-6 py-3 rounded-full transition;
   }
+
   .btn-spa-outline {
     @apply border border-spa-700 text-spa-700 px-6 py-3 rounded-full hover:bg-spa-500 hover:text-white transition;
   }
+
+  .field-spa {
+    @apply w-full rounded-xl border border-spa-300 bg-white px-4 py-3 text-gray-700 outline-none transition focus:border-spa-500;
+  }
 }
+
 body {
   background: var(--background);
   color: var(--foreground);

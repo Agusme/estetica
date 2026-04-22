@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-spa-700 text-white py-8 mt-10">
+    <footer id="contact" className="bg-spa-700 text-white py-8 mt-10">
       <div className="container mx-auto px-4 flex flex-col items-center gap-4">
         <div className="flex gap-4">
           <a
@@ -21,7 +21,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://wa.me/549381XXXXXXX"
+            href="https://wa.me/5493815550000"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
@@ -39,8 +39,7 @@ export default function Footer() {
           </a>
         </div>
         <p className="text-sm text-spa-300">
-          &copy; {new Date().getFullYear()} Estética Natural. Todos los derechos
-          reservados.
+          &copy; {new Date().getFullYear()} Estética Natural. Todos los derechos reservados.
         </p>
       </div>
     </footer>

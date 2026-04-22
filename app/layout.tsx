@@ -44,7 +44,8 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${merriweather.variable} h-full antialiased scroll-smooth`}      style={{ colorScheme: "light" }}
+      className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} ${merriweather.variable} h-full antialiased scroll-smooth`}
+      style={{ colorScheme: "light" }}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />

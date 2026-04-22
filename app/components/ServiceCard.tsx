@@ -6,6 +6,8 @@ interface ServiceCardProps {
   title: string;
   description: string;
   priority?: boolean;
+  objectPosition?: string;
+  onOpen: () => void;
 }
 
 export default function ServiceCard({
@@ -14,25 +16,28 @@ export default function ServiceCard({
   title,
   description,
   priority = false,
+  objectPosition = "object-[center_35%]",
+  onOpen,
 }: ServiceCardProps) {
   return (
-    <div className="bg-spa-300 border   border-t-4 border-spa-300 shadow rounded-xl overflow-hidden transition duration-300 md:hover:scale-105 md:hover:shadow-lg">
+    <div className="bg-spa-700 border text-white border-t-4 border-spa-800 shadow rounded-xl overflow-hidden transition duration-300 md:hover:scale-105 md:hover:shadow-lg" onClick={onOpen}>
       <Image
         src={src}
         alt={alt}
         width={400}
-        height={300}
+        height={400}
         priority={priority}
-        className="w-full h-48 object-cover"
+        className={`w-full h-34 md:h-40 object-cover ${objectPosition}`}
       />
       <div className="p-4">
         <h3 className="font-bold mb-2">{title}</h3>
         <p>{description}</p>
       </div>
-      <div>
-        
+      <div className="mb-5 px-4">
+        <button type="button" onClick={onOpen} className="text-xs underline underline-offset-2 cursor-pointer">
+          Ver más
+        </button>
       </div>
-   
     </div>
   );
 }
