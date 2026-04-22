@@ -6,12 +6,12 @@ export default function Hero() {
       <div className="container mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div className="text-center md:text-left">
           <h1 className="text-spa-700 font-playfair text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            Realza tu belleza natural
+            Realzá tu belleza natural
           </h1>
 
           <p className="font-merriweather text-lg md:text-xl mb-6 max-w-xl text-gray-600 font-light">
-            Tratamientos esteticos personalizados para que te sientas segura,
-            comoda y radiante.
+            Tratamientos estéticos personalizados para que te sientas segura,
+            cómoda y radiante.
           </p>
 
           <div className="flex gap-4 mt-3 justify-center md:justify-start">
@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="relative w-full aspect-[4/3] overflow-hidden shadow-lg rounded-xl">
           <Image
             src="/hero.jpg"
-            alt="Tratamiento estetico"
+            alt="Tratamiento estético"
             fill
             className="object-cover"
             priority

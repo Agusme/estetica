@@ -6,7 +6,7 @@ const whatsappNumber = "5493815550000";
 
 const services = [
   "Limpieza facial",
-  "Depilacion definitiva",
+  "Depilación definitiva",
   "Tratamientos corporales",
   "Consulta general",
 ];
@@ -33,10 +33,10 @@ export default function CTA() {
     <section id="turnos" className="py-16 px-6 text-center bg-lime-100">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-3xl font-semibold mb-4 text-spa-700 font-playfair">
-          Reserva tu turno
+          Reservá tu turno
         </h2>
         <p className="mb-8 text-gray-600 max-w-2xl mx-auto">
-          Completa tus datos y te llevamos a WhatsApp con el mensaje listo para coordinar tu consulta.
+          Completá tus datos y te llevamos a WhatsApp con el mensaje listo para coordinar tu consulta.
         </p>
 
         <div className="bg-white rounded-2xl shadow-md p-6 md:p-8 text-left">
@@ -84,7 +84,7 @@ export default function CTA() {
                 value={notes}
                 onChange={(event) => setNotes(event.target.value)}
                 rows={4}
-                placeholder="Contanos que tratamiento queres hacerte o cualquier detalle importante"
+                placeholder="Contanos qué tratamiento querés hacerte o cualquier detalle importante"
                 className="field-spa mt-2 resize-none"
               />
             </label>
@@ -92,7 +92,7 @@ export default function CTA() {
 
           <div className="mt-6 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
             <p className="text-sm text-gray-600">
-              Te redirige a WhatsApp con la informacion cargada.
+              Te redirige a WhatsApp con la información cargada.
             </p>
 
             <a

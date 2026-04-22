@@ -25,13 +25,13 @@ const merriweather = Merriweather({
 });
 
 export const metadata: Metadata = {
-  title: "Estetica Natural | Tratamientos esteticos personalizados",
+  title: "Estética Natural | Tratamientos estéticos personalizados",
   description:
-    "Limpieza facial, depilacion definitiva y tratamientos corporales. Reserva tu turno por WhatsApp.",
+    "Limpieza facial, depilación definitiva y tratamientos corporales. Reservá tu turno por WhatsApp.",
   openGraph: {
-    title: "Estetica Natural",
+    title: "Estética Natural",
     description:
-      "Tratamientos esteticos personalizados para que te sientas radiante.",
+      "Tratamientos estéticos personalizados para que te sientas radiante.",
     type: "website",
   },
 };

@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="bg-white shadow sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#" className="font-playfair text-2xl font-bold text-spa-700">
-          Estetica Natural
+          Estética Natural
         </a>
 
         <div className="hidden md:flex space-x-6">
@@ -33,7 +33,7 @@ export default function Navbar() {
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden flex flex-col gap-1.5 p-2"
-          aria-label="Menu"
+          aria-label="Menú"
           aria-expanded={open}
         >
           <span
