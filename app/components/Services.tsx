@@ -21,15 +21,19 @@ const services: ServiceDetail[] = [
     src: "/clean.jpg",
     alt: "Limpieza facial",
     title: "Limpieza facial",
-    description: "Mejorá la salud y apariencia de tu piel.",
+    description: "MejorÃ¡ la salud y apariencia de tu piel.",
     fullDescription:
       "Una limpieza profunda pensada para remover impurezas, oxigenar la piel y dejar el rostro más luminoso y equilibrado.",
-    benefits: ["Limpieza profunda", "Piel más luminosa", "Rutina adaptada a tu piel"],
+    benefits: [
+      "Limpieza profunda",
+      "mÃ¡s luminosa",
+      "Rutina adaptada a tu piel",
+    ],
     duration: "60 minutos",
-    objectPosition: "object-[center_30%]",
+    objectPosition: "object-[center_38%]",
   },
   {
-    src: "/depi.png",
+    src: "/depilacion.png",
     alt: "Depilación",
     title: "Depilación definitiva",
     description: "Resultados duraderos y sin dolor.",
@@ -38,6 +42,7 @@ const services: ServiceDetail[] = [
     benefits: ["Menos vello", "Menos irritación", "Sesiones rápidas"],
     duration: "30 a 45 minutos",
     priority: true,
+    objectPosition: "object-[center_60%]",
   },
   {
     src: "/esthetic.jpg",
@@ -46,7 +51,11 @@ const services: ServiceDetail[] = [
     description: "Modelá y cuidá tu cuerpo.",
     fullDescription:
       "Sesiones orientadas a mejorar textura, tonicidad y bienestar corporal con técnicas adaptadas a tu objetivo.",
-    benefits: ["Mejora la tonicidad", "Favorece el drenaje", "Plan personalizado"],
+    benefits: [
+      "Mejora la tonicidad",
+      "Favorece el drenaje",
+      "Plan personalizado",
+    ],
     duration: "50 a 75 minutos",
     priority: true,
     objectPosition: "object-[center_60%]",
@@ -54,7 +63,9 @@ const services: ServiceDetail[] = [
 ];
 
 export default function Services() {
-  const [selectedService, setSelectedService] = useState<ServiceDetail | null>(null);
+  const [selectedService, setSelectedService] = useState<ServiceDetail | null>(
+    null,
+  );
 
   return (
     <>
@@ -91,7 +102,7 @@ export default function Services() {
             </div>
             <p className="leading-7">{selectedService.fullDescription}</p>
             <div>
-              <p className="font-semibold text-spa-700 mb-2">Beneficios</p>
+              <p className="mb-2 font-semibold text-spa-700">Beneficios</p>
               <ul className="space-y-2">
                 {selectedService.benefits.map((benefit) => (
                   <li key={benefit} className="flex gap-2">
