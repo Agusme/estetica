@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="#" className="font-playfair text-2xl font-bold text-spa-700">
+        <a href="#" className="font-playfair text-2xl  text-spa-700">
           Estética Natural
         </a>
 

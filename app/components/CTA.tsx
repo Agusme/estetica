@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 
 const whatsappNumber = "5493815550000";
@@ -30,16 +31,41 @@ export default function CTA() {
   }, [date, name, notes, service]);
 
   return (
-    <section id="turnos" className="py-16 px-6 text-center bg-lime-100">
-      <div className="container mx-auto max-w-4xl">
-    <div className="mb-8">
-        <p className="mb-3 text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-stone-500">
-Reservá tu turno        </p>
-        <h2 className="font-playfair text-4xl  text-spa-700">
-Un momento para vos        </h2>
-    </div>
+    <section
+      id="turnos"
+      className="relative overflow-hidden px-6 py-24 text-center"
+    >
+      <Image
+        src="/fondoCTA.png"
+        alt=""
+        fill
+        aria-hidden="true"
+        className="object-cover object-top-left scale-110"
+      />
+<div className="absolute inset-0 bg-linear-to-r from-white/25 to-transparent" />      <div className="relative z-10 container mx-auto max-w-4xl">
+        <div className="mb-6">
+          <p className="mb-3 text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-stone-500">
+            Reservá tu turno{" "}
+          </p>
+          <h2 className="font-playfair text-5xl text-spa-700">
+            Un momento para vos
+          </h2>
+        </div>
 
-        <div className="bg-white rounded-2xl shadow-md p-6 md:p-8 text-left max-w-2xl mx-auto">
+        <div
+          className="
+    bg-white/95
+    backdrop-blur-sm
+    rounded-3xl
+    shadow-xl
+    p-6
+    md:p-8
+    text-left
+    max-w-2xl
+    mx-auto
+  "
+        >
+          {" "}
           <div className="grid md:grid-cols-2 gap-4">
             <label className="text-sm text-gray-700 font-medium">
               Nombre
@@ -66,7 +92,6 @@ Un momento para vos        </h2>
               </select>
             </label>
           </div>
-
           <div className="grid md:grid-cols-[220px_1fr] gap-4 mt-4">
             <label className="text-sm text-gray-700 font-medium">
               Fecha preferida
@@ -89,7 +114,6 @@ Un momento para vos        </h2>
               />
             </label>
           </div>
-
           <div className="mt-6 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
             <p className="text-sm text-gray-600">
               Te redirige a WhatsApp con la información cargada.
