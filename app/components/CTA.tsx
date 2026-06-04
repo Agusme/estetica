@@ -36,7 +36,7 @@ export default function CTA() {
       className="relative overflow-hidden px-6 py-24 text-center"
     >
       <Image
-        src="/fondoCTA.png"
+        src="/fondoCTA.webp"
         alt=""
         fill
         aria-hidden="true"
