@@ -32,14 +32,14 @@ export default function CTA() {
   return (
     <section id="turnos" className="py-16 px-6 text-center bg-lime-100">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl font-semibold mb-4 text-spa-700 font-playfair">
-          Reservá tu turno
-        </h2>
-        <p className="mb-8 text-gray-600 max-w-2xl mx-auto">
-          Completá tus datos y te llevamos a WhatsApp con el mensaje listo para coordinar tu consulta.
-        </p>
+    <div className="mb-8">
+        <p className="mb-3 text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-stone-500">
+Reservá tu turno        </p>
+        <h2 className="font-playfair text-4xl  text-spa-700">
+Un momento para vos        </h2>
+    </div>
 
-        <div className="bg-white rounded-2xl shadow-md p-6 md:p-8 text-left">
+        <div className="bg-white rounded-2xl shadow-md p-6 md:p-8 text-left max-w-2xl mx-auto">
           <div className="grid md:grid-cols-2 gap-4">
             <label className="text-sm text-gray-700 font-medium">
               Nombre
@@ -47,7 +47,7 @@ export default function CTA() {
                 value={name}
                 onChange={(event) => setName(event.target.value)}
                 placeholder="Tu nombre"
-                className="field-spa mt-2"
+                className="field-spa mt-2  "
               />
             </label>
 
@@ -99,7 +99,7 @@ export default function CTA() {
               href={whatsappHref}
               rel="noopener noreferrer"
               target="_blank"
-              className="btn-spa inline-flex items-center justify-center gap-2"
+              className="text-sm btn-spa inline-flex items-center justify-center gap-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -69,7 +69,7 @@ export default function Services() {
         <p className="mb-3 text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-stone-500">
           Nuestros servicios
         </p>
-        <h2 className="font-playfair text-4xl font-semibold text-spa-700">
+        <h2 className="font-playfair text-4xl  text-spa-700">
           Cuidado que se siente
         </h2>
         <div className="mx-auto mb-9 mt-4 flex w-12 items-center justify-center gap-1 text-spa-500">
