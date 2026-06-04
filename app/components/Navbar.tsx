@@ -12,18 +12,64 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="#" className="font-playfair text-2xl  text-spa-700">
-          Estética Natural
-        </a>
+    <nav className="sticky top-0 z-50 border-b border-stone-200/40 bg-white/80 backdrop-blur-md">
+      <div className="container mx-auto flex items-center justify-between px-6 py-4">
+     <a
+  href="#"
+  className="flex items-center gap-2 text-spa-500 transition-opacity hover:opacity-80"
+>
+  <svg
+    className="h-7 w-7 md:h-8 md:w-8"
+    viewBox="0 0 32 32"
+    fill="none"
+    aria-hidden="true"
+  >
+    <path
+      d="M17 26c0-8.2-5.2-13.5-11-15 0 7.3 4.6 12.4 11 15Z"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M15 23c1.3-6.8 5.7-11.2 11-12-.2 6.4-4.2 10.6-10.2 12.4"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M8.5 14.5 17 26m7-12-8 9"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+    />
+  </svg>
 
-        <div className="hidden md:flex space-x-6">
+  <span className="font-playfair text-2xl md:text-[2rem]">
+    Estética
+  </span>
+</a>
+        <div className="hidden md:flex items-center gap-10">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-spa-700 font-semibold hover:text-gray-600 transition"
+              className="
+                relative
+                tracking-wide
+                text-spa-500
+                transition-colors
+                duration-300
+                hover:text-spa-700
+                after:absolute
+                after:left-0
+                after:-bottom-1
+                after:h-px
+                after:w-0
+                after:bg-spa-700
+                after:transition-all
+                after:duration-300
+                hover:after:w-full
+              "
             >
               {link.label}
             </a>
@@ -32,34 +78,51 @@ export default function Navbar() {
 
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="flex flex-col gap-1.5 rounded-lg p-2 md:hidden"
           aria-label="Menú"
           aria-expanded={open}
         >
           <span
-            className={`block h-0.5 w-6 font-semibold bg-spa-700 transition-transform ${open ? "rotate-45 translate-y-2" : ""}`}
+            className={`block h-0.5 w-6 bg-spa-500 transition-transform duration-300 ${
+              open ? "translate-y-2 rotate-45" : ""
+            }`}
           />
           <span
-            className={`block h-0.5 w-6 font-semibold bg-spa-700 transition-opacity ${open ? "opacity-0" : ""}`}
+            className={`block h-0.5 w-6 bg-spa-500 transition-opacity duration-300 ${
+              open ? "opacity-0" : ""
+            }`}
           />
           <span
-            className={`block h-0.5 w-6 font-semibold bg-spa-700 transition-transform ${open ? "-rotate-45 -translate-y-2" : ""}`}
+            className={`block h-0.5 w-6 bg-spa-500 transition-transform duration-300 ${
+              open ? "-translate-y-2 -rotate-45" : ""
+            }`}
           />
         </button>
       </div>
 
       {open && (
-        <div className="md:hidden border-t px-4 pb-4 space-y-2">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setOpen(false)}
-              className="block py-2 text-gray-600 hover:text-spa-700 transition"
-            >
-              {link.label}
-            </a>
-          ))}
+        <div className="md:hidden border-t border-stone-200/40 bg-white/95 backdrop-blur-md">
+          <div className="flex flex-col px-6 py-4 text-center">
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="
+                  py-3
+                  text-spa-500
+                  font-medium
+                  border-b
+                  border-stone-100
+                  last:border-0
+                  transition
+                  hover:text-spa-700
+                "
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
         </div>
       )}
     </nav>

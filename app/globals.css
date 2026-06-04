@@ -12,28 +12,52 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
   --color-spa-50: #f5f8f1;
   --color-spa-100: #e9f0df;
   --color-spa-300: #b7cb9a;
   --color-spa-500: #6f8f45;
   --color-spa-700: rgb(48 77 37);
   --color-spa-800: #233612;
+
   --font-playfair: var(--font-playfair);
   --font-merriweather: var(--font-merriweather);
 }
+.btn-spa {
+  background: rgb(48 77 37);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  transition: 0.2s;
+}
+.btn-spa:hover {
+  background: #233612;
+}
+.btn-spa-outline {
+  border: 1px solid #6f8f45;
+  color: #6f8f45;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  transition: 0.2s;
+}
+.btn-spa-outline:hover {
+  background: #6f8f45;
+  color: white;
+}
 
-@layer components {
-  .btn-spa {
-    @apply bg-spa-700 hover:bg-spa-800 text-white px-6 py-3 rounded-full transition;
-  }
+.field-spa {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid #b7cb9a;
+  background-color: white;
+  padding: 0.75rem 1rem;
+  color: #374151;
+  transition: border-color 0.2s;
+}
 
-  .btn-spa-outline {
-    @apply border border-spa-700 text-spa-700 px-6 py-3 rounded-full hover:bg-spa-500 hover:text-white transition;
-  }
-
-  .field-spa {
-    @apply w-full rounded-xl border border-spa-300 bg-white px-4 py-3 text-gray-700 outline-none transition focus:border-spa-500;
-  }
+.field-spa:focus {
+  outline: none;
+  border-color: #6f8f45;
 }
 
 body {

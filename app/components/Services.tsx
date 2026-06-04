@@ -66,12 +66,15 @@ export default function Services() {
   return (
     <>
       <section className="px-6 py-16 text-center" id="services">
-        <p className="mb-3 text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-stone-500">
-          Nuestros servicios
-        </p>
-        <h2 className="font-playfair text-4xl  text-spa-700">
-          Cuidado que se siente
-        </h2>
+       <div className="mb-6">
+          <p className="mb-3 text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-stone-500">
+            Nuestros Servicios{" "}
+          </p>
+          <h2 className="font-playfair text-5xl text-spa-700">
+            Cuidados que se sienten
+          </h2>
+        </div>
+
         <div className="mx-auto mb-9 mt-4 flex w-12 items-center justify-center gap-1 text-spa-500">
           <span className="h-px w-4 bg-spa-300" />
           <span className="font-playfair text-lg leading-none">&</span>

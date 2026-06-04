@@ -26,8 +26,7 @@ export default function Hero() {
             cómoda y radiante.
           </p>
 
-          <div className="mt-3 flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start">
-            <a className="btn-spa" href="#turnos">
+<div className="mt-3 flex flex-col items-center gap-4 sm:flex-row md:justify-start">            <a className="btn-spa" href="#turnos">
               Reservar turno
             </a>
             <a className="btn-spa-outline" href="#services">
