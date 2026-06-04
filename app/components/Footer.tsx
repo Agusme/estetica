@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-spa-700 text-white py-8 mt-10">
+    <footer id="contact" className="bg-spa-700 text-white py-8">
       <div className="container mx-auto px-4 flex flex-col items-center gap-4">
         <div className="flex gap-4">
           <a

@@ -16,7 +16,7 @@
   --color-spa-100: #e9f0df;
   --color-spa-300: #b7cb9a;
   --color-spa-500: #6f8f45;
-  --color-spa-700: #2d4517;
+  --color-spa-700: rgb(48 77 37);
   --color-spa-800: #233612;
   --font-playfair: var(--font-playfair);
   --font-merriweather: var(--font-merriweather);

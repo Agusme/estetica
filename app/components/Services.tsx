@@ -14,6 +14,8 @@ interface ServiceDetail {
   duration: string;
   priority?: boolean;
   objectPosition?: string;
+  imageClassName?: string;
+  icon?: "leaf" | "sparkles" | "hands";
 }
 
 const services: ServiceDetail[] = [
@@ -27,6 +29,7 @@ const services: ServiceDetail[] = [
     benefits: ["Limpieza profunda", "Piel más luminosa", "Rutina adaptada a tu piel"],
     duration: "60 minutos",
     objectPosition: "object-[center_30%]",
+    icon: "leaf",
   },
   {
     src: "/depi.png",
@@ -38,18 +41,22 @@ const services: ServiceDetail[] = [
     benefits: ["Menos vello", "Menos irritación", "Sesiones rápidas"],
     duration: "30 a 45 minutos",
     priority: true,
+    objectPosition: "object-[center_48%]",
+    imageClassName: "scale-[1.12] group-hover:scale-[1.16]",
+    icon: "sparkles",
   },
   {
     src: "/esthetic.jpg",
-    alt: "Tratamientos corporales",
-    title: "Tratamientos corporales",
-    description: "Modelá y cuidá tu cuerpo.",
+    alt: "Masajes relajantes",
+    title: "Masajes relajantes",
+    description: "Alivio del estrés y bienestar profundo.",
     fullDescription:
-      "Sesiones orientadas a mejorar textura, tonicidad y bienestar corporal con técnicas adaptadas a tu objetivo.",
-    benefits: ["Mejora la tonicidad", "Favorece el drenaje", "Plan personalizado"],
+      "Sesiones orientadas a relajar el cuerpo, aliviar tensiones y renovar la sensación de bienestar con técnicas adaptadas a tu objetivo.",
+    benefits: ["Relajación profunda", "Alivia tensiones", "Bienestar corporal"],
     duration: "50 a 75 minutos",
     priority: true,
     objectPosition: "object-[center_60%]",
+    icon: "hands",
   },
 ];
 
@@ -58,12 +65,20 @@ export default function Services() {
 
   return (
     <>
-      <section className="py-16 px-6 text-center" id="services">
-        <h2 className="text-3xl font-playfair font-semibold mb-10 text-spa-700">
+      <section className="px-6 py-16 text-center" id="services">
+        <p className="mb-3 text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-stone-500">
           Nuestros servicios
+        </p>
+        <h2 className="font-playfair text-4xl  text-spa-700">
+          Cuidado que se siente
         </h2>
+        <div className="mx-auto mb-9 mt-4 flex w-12 items-center justify-center gap-1 text-spa-500">
+          <span className="h-px w-4 bg-spa-300" />
+          <span className="font-playfair text-lg leading-none">&</span>
+          <span className="h-px w-4 bg-spa-300" />
+        </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="mx-auto grid max-w-5xl gap-7 md:grid-cols-3">
           {services.map((service) => (
             <ServiceCard
               key={service.title}
@@ -73,6 +88,8 @@ export default function Services() {
               description={service.description}
               priority={service.priority}
               objectPosition={service.objectPosition}
+              imageClassName={service.imageClassName}
+              icon={service.icon}
               onOpen={() => setSelectedService(service)}
             />
           ))}
@@ -91,7 +108,7 @@ export default function Services() {
             </div>
             <p className="leading-7">{selectedService.fullDescription}</p>
             <div>
-              <p className="font-semibold text-spa-700 mb-2">Beneficios</p>
+              <p className="mb-2 font-semibold text-spa-700">Beneficios</p>
               <ul className="space-y-2">
                 {selectedService.benefits.map((benefit) => (
                   <li key={benefit} className="flex gap-2">
