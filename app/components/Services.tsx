@@ -20,7 +20,7 @@ interface ServiceDetail {
 
 const services: ServiceDetail[] = [
   {
-    src: "/clean.jpg",
+    src: "/clean.webp",
     alt: "Limpieza facial",
     title: "Limpieza facial",
     description: "Mejorá la salud y apariencia de tu piel.",
@@ -32,7 +32,7 @@ const services: ServiceDetail[] = [
     icon: "leaf",
   },
   {
-    src: "/depi.png",
+    src: "/depilacion.webp",
     alt: "Depilación",
     title: "Depilación definitiva",
     description: "Resultados duraderos y sin dolor.",
@@ -46,7 +46,7 @@ const services: ServiceDetail[] = [
     icon: "sparkles",
   },
   {
-    src: "/esthetic.jpg",
+    src: "/masajes.webp",
     alt: "Masajes relajantes",
     title: "Masajes relajantes",
     description: "Alivio del estrés y bienestar profundo.",

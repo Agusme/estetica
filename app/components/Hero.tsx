@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative flex min-h-[calc(100svh-5rem)] items-center overflow-hidden bg-linear-to-b from-lime-50 to-white px-6 py-16 sm:px-10 lg:min-h-screen lg:px-20">
       <div className="absolute inset-y-0 right-0 w-full md:w-[68%]">
         <Image
-          src="/hero.jpg"
+          src="/hero.webp"
           alt="Ambiente de estética con velas y toallas"
           fill
           className="object-cover object-[68%_center] opacity-45 blur-[1px] [mask-image:linear-gradient(90deg,transparent_0%,rgba(0,0,0,0.18)_26%,black_54%)] md:opacity-100 md:blur-0 md:[mask-image:linear-gradient(90deg,transparent_0%,rgba(0,0,0,0.18)_15%,black_34%)]"

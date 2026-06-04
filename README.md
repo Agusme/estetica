@@ -63,10 +63,10 @@ app/
   layout.tsx
   page.tsx
 public/
-  clean.jpg
-  depi.png
-  esthetic.jpg
-  hero.jpg
+  clean.webp
+depilacion.webp
+  masajes.webp
+  hero.webp
 ```
 
 ## Decisiones tecnicas destacables
